@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoogleLoginPage</title>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: white;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+        nav{
+            height: 70px;
+            border: none;
+            display: inline-block;
+        }
+        section{
+            border: none;
+            width: 100%;
+            margin-top: 40px;
+        }
+        #input_box{
+            width: 650px;
+            height: 50px;
+            border: 1px solid transparent;
+
+            margin: 40px auto;
+            border-radius: 40px;
+            box-shadow: 1px 3px 10px grey;
+        }
+        input{
+            height: 40px;
+            width: 340px;
+            margin-left: 30px;
+            border: none;
+            padding-right: 5px;
+        }
+        i#search{
+            color: blue;
+            font-size: 18px;
+            margin-left: 10px;
+            padding-top: 8px;
+            margin-top: 4px;
+
+        }
+        i#microphone{
+            /* background-image: linear-gradient(red,blue); */
+            color: blue;
+            /* color: transparent; */
+            background-clip: text;
+            font-size: 20px;
+            margin-left: 170px;
+            padding-top: 8px;
+        }
+        i#camera{
+            color: blue;
+            font-size: 20px;
+            /* background-image: linear-gradient(red,blue); */
+            /* color: transparent; */
+            background-clip: text;
+            margin-left: 10px;
+        }
+        #div1{
+            margin-left: 1150px;
+            margin-top: 15px;
+        }
+        #div i{
+            margin-right: 15px;
+        }
+        #div1 a{
+            margin: 15px 5px;
+            padding: 5px;
+            color: black;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .child{
+            position: relative;
+            font-weight: bold;
+            font-size: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0px;
+            text-align: center;
+        }
+        .child1{
+            padding: 0px;
+            margin-left: 40%;
+            margin-top: 50%;
+        }
+        .blue{
+            color: blue;
+        }
+        .red{
+            color: red;
+        }
+        .orange{
+            color: orange;
+        }
+        .blue{
+            color: blue;
+        }
+        .green{
+            color: green;
+        }
+        .red{
+            color: red;
+        }
+        .Box3{
+            margin-left: 50%;
+            padding: 40px 50px;
+            margin-bottom: 50px;
+            display: inline-block;
+            margin: 2px auto;
+            border-radius: 10px;
+            font-size: 40px;
+            margin-top: 0px;
+
+        }
+        i.fa-whatsapp{
+            padding: 10px 20px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 40px white;
+            background-color: green;
+            color: white;
+            margin-right: 50px;
+            margin-left: 370px;
+        }
+        i.fa-instagram{
+            padding: 10px 20px; 
+            box-shadow: 0px 0px 40px white;
+            border-radius: 20px;
+            background-color: red;
+            color: white;
+            margin-right: 50px;
+        }
+        i.fa-linkedin{
+            padding: 10px 20px; 
+            box-shadow: 0px 0px 40px white;
+            border-radius: 20px;
+            color: white;
+            background-color: blue;
+            margin-right: 50px;
+        }
+        i.fa-github{
+            padding: 10px 20px; 
+            box-shadow: 0px 0px 40px white;
+            border-radius: 20px;
+            color: white;
+            background-color: yellowgreen;
+            margin-right: 50px;  
+        }
+        i.fa-youtube-play{
+            padding: 10px 18px; 
+            box-shadow: 0px 0px 40px white;
+            border-radius: 20px;
+            color: white;
+            background-color: red;
+            margin-right: 50px;
+            margin-left: 370px;
+        }
+        i.fa-telegram{
+            padding: 10px 18px; 
+            box-shadow: 0px 0px 40px white;
+            border-radius: 20px;
+            color: white;
+            background-color: blue;
+            margin-right: 50px;
+        }
+        i.fa-twitter{
+            padding: 10px 20px; 
+            box-shadow: 0px 0px 40px white;
+            border-radius: 20px;
+            color: white;
+            background-color: black;
+            margin-right: 50px;
+        }
+        i.fa-plus{
+            padding: 10px 20px; 
+            box-shadow: 0px 0px 40px white;
+            border-radius: 20px;
+            color: white;
+            background-color: purple;
+            margin-right: 50px;
+        }
+</style>
+</head>
+<body>
+    <main>
+        <nav>
+            <div id="div1">
+                <a href="#">Email</a>
+                <a href="#">Image</a>
+                <i class="fa fa-flask" aria-hidden="true"></i>
+                <i class="fa fa-th" aria-hidden="true"></i>
+            </div>
+        </nav>
+    <section>
+        <div class="child" id="child1">
+            <span class="blue">G</span>
+            <span class="red">O</span>
+            <span class="orange">O</span>
+            <span class="blue">G</span>
+            <span class="green">L</span>
+            <span class="red">E</span>
+        </div>
+        <div id="input_box">
+            <i id="search" class="fa fa-search" aria-hidden="true"></i>
+            <input id="search" type="serach" placeholder="Google Search">
+            <i id="microphone" class="fa fa-microphone" aria-hidden="true"></i>
+            <i id="camera" class="fa fa-camera" aria-hidden="true"></i>
+        </div>
+    </section>
+    <div class="Box3">
+        <ul>
+            <a href="https.//www.whatsapp.com"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="https.//www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https.//www.linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https.//www.github.com"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <br>
+            <br>
+            <a href="https.//www.youtube.com"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            <a href="https.//www.telegram.com"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+            <a href="https.//www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https.//www.plus.com"><i class="fa fa-plus" aria-hidden="true"></i></a></ul>
+    </div>
+</main>
+<footer></footer>
+</body>
+</html>

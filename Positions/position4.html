@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height: 500px;
+            width: 600px; 
+            border: 1px; 
+            background-color: wheat;
+            margin: 100px 0px;
+
+        }
+        .child{
+            height: 100px;
+            width: 100px;
+            border: 1px;
+            background-color: dodgerblue;
+            position: absolute;
+            top: 100px;
+        }
+        .parent1{
+            position:static
+        }
+        .parent2{
+            position: absolute;
+        }
+        .child2{
+        position: absolute;
+        top: 100px;
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    <div class="parent parent1">
+        <div class="child child1"></div>
+    </div>
+
+    <div class="parent parent2">
+        <div class="child child2"></div>
+    </div>
+</body>
+</html>

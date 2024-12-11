@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .cone{
+         height: 400px;
+         width: 400px;
+         border: 1px solid;
+         margin: 30px auto;
+    }
+    #cone1{
+        background-image: conic-gradient(red 0deg 90deg, yellow 90deg 180deg,
+        blue 180deg 270 deg,green 270deg 360deg);
+    }
+    #cone2{
+        background-image: conic-gradient(red 0deg 135deg,white 135deg 315deg,red 315deg 360deg);
+    }
+    #cone3{
+        background-image: conic-gradient(red 0deg 45deg,white 45deg 315deg,red 315deg 360deg);
+    }
+    #cone4{
+        background-image: repeating-conic-gradient(red 10%,yellow 20%);
+        border-radius:50%;
+    }
+    #cone5{
+        background-image: repeating-conic-gradient(red 0deg 15deg,yellow 15deg 30deg,blue 30deg 45deg);
+        border-radius: 50%;
+        border:none;
+    }
+    </style>
+</head>
+<body>
+    
+   <div class="grad" id="cone1"></div>
+   <div class="grad" id="cone2"></div>
+   <div class="grad" id="cone3"></div>
+   <div class="grad" id="cone4"></div>
+   <div class="grad" id="cone5"></div>
+</body>
+</html>

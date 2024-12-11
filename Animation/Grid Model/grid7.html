@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid MODEL 7</title>
+    <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .container{
+        height: 100vh;
+        width: 100%;
+        background-color: #3333;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+        padding: 20px;
+      }
+      .grid-items{
+        color: white;
+        background-color: rgba(0, 0, 0, 0.932);
+        text-align: center;
+        font-size: 40px;
+        padding: 30px;
+
+      }
+      #grid-items1{
+        grid-column: 1/4;
+      }
+      #grid-items4{
+        grid-column: 1/3;
+      }
+      #grid-items7{
+        grid-column: 1/4;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-items" id="grid-items1">1</div>
+        <!-- <div class="grid-items" id="grid-items2">2</div>
+        <div class="grid-items" id="grid-items3">3</div> -->
+        <div class="grid-items" id="grid-items4">4</div>
+        <!-- <div class="grid-items" id="grid-items5">5</div> -->
+        <div class="grid-items" id="grid-items6">6</div>
+        <div class="grid-items" id="grid-items7">7</div>
+        <!-- <div class="grid-items" id="grid-items6">8</div>
+        <div class="grid-items" id="grid-items7">9</div> -->
+    </div>
+</body>
+</html>

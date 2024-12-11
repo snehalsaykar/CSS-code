@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 300px;
+            width: 500px;
+            border: 10px dotted black;
+            margin: 50px auto;
+            padding: 100px;
+            text-align: center;
+            line-height: 300px;
+            font-size: 80px;
+            color: white;
+        }
+        #box1{
+            background-color: red;
+        }
+        #box2{
+            background-clip: content-box;
+            background-color: red;
+        }
+        #box3{
+            background-clip: padding-box;
+            background-color: red;
+
+        }
+        #box4{
+            background-clip: border-box;
+            border: 10px dotted white;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2">Content-Box</div>
+    <div class="box" id="box3">Padding-Box</div>
+    <div class="box" id="box4">Border-Box</div>
+</body>
+</html>

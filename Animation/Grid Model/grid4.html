@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Model 4</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;  
+            width: 100%;
+            background-color: rgba(249, 59, 59, 0.616);
+            display: grid;
+            grid-template-areas: ' header1 header1 header1 header1 header2 header2 header2 header2'
+                                   'main main menu menu menu right right right'
+                                   'footer1 footer1 footer1 footer1 footer2 footer2 footer2 footer2'
+                ;
+            /* gap: 10px; */
+            padding: 20px;
+            gap: 20px;
+        }
+        .grid-items{
+            background-color: rgba(123, 153, 181, 0.7);   
+            text-align: center;
+            font-size: 20px;
+            padding: 30px;
+            color: black;
+            /* white */
+        }
+       .grid-items:nth-child(1){
+            grid-area: header1;
+        }
+        .grid-items:nth-child(2){
+            grid-area: header2;
+        }
+        .grid-items:nth-child(3){
+            grid-area: main;
+        }
+        .grid-items:nth-child(4){
+            grid-area: menu;
+        }
+        .grid-items:nth-child(5){
+            grid-area: right;
+        }
+        .grid-items:nth-child(6){
+            grid-area: footer1;
+        }
+        .grid-items:nth-child(7){
+            grid-area: footer2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-items" id="grid-items1">HEADER-1</div>
+        <div class="grid-items" id="grid-items2">HEADER-2</div>
+        <div class="grid-items" id="grid-items3">MAIN</div>
+        <div class="grid-items" id="grid-items4">MENU</div>
+        <div class="grid-items" id="grid-items5">RIGHT</div>
+        <div class="grid-items" id="grid-items6">FOOTER-1</div>
+        <div class="grid-items" id="grid-items7">FOOTER-2</div>
+    </div>
+</body>
+</html>

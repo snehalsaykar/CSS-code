@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAPTOP MOBILE TAB1</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        div{
+            height: 100vh;
+            width: 100%;
+            background-color: deepskyblue;
+            border: none;
+        }
+        .child{
+            height: 100vh;
+            width: 100%;
+            box-sizing: border-box;
+            border: none;
+            background-color: red, green, white, orange;
+            
+        }
+        @media (min-width: 1201px) and (min-height: 5000px) {
+            .container{
+                background-color: blue;
+                /* height: 80vh; */
+                width: 100%;
+
+            }
+            nav{
+                justify-content: center;
+                background-image: linear-gradient(45deg, blue, violet);
+                flex-direction: column;
+                display: flex;
+            }
+            .child{
+                text-align: center;
+                margin: 10px 0px;
+                padding: 10px;
+            }
+        }
+
+        @media (min-width: 751px) and (min-height: 1200px) {
+            .container{
+                background-color: violet;
+                /* height: 80vh; */
+                width: 100%;
+
+            }
+            nav{
+                justify-content: center;
+                background-image: linear-gradient(45deg, blue, violet);
+                flex-direction: column;
+                display: flex;
+            }
+            .child{
+                text-align: center;
+                margin: 10px 0px;
+                padding: 10px;
+            }
+        }
+
+        @media (min-width: 50px) and (min-height: 750px) {
+            div{
+                background-color: orange;
+                height: 80vh;
+                width: 70%;
+                border: none;
+                margin: 50% auto;
+                border-radius: 50%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <nav>
+       <div class="child" id="child1">home</div> 
+       <div class="child" id="child1">contact</div> 
+       <div class="child" id="child1">about</div> 
+    </nav>
+    </div>
+</body>
+</html>

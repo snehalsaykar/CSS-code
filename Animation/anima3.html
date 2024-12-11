@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .spin{
+            height: 100px;
+            width:100px;
+            border: 16px solid white;
+            margin: 30px auto;
+            border-radius: 50%;
+            animation: spin 1s infinite linear;
+        }
+        #spin1{
+            border-top: 16px solid rgb(37, 37, 250);
+            animation-direction: normal;
+        }
+        #spin2{
+            border-top: 16px solid rgb(243, 17, 17);
+            animation-direction: alternate;
+        }
+        #spin3{
+            border-top: 16px solid rgb(11, 245, 11);
+            animation-direction: alternate-reverse;
+        }
+        #spin4{
+            border-top: 16px solid rgb(97, 28, 3);
+            animation-direction: reverse;
+        }
+        #spin5{
+            border-top: 16px dashed rgb(146, 4, 80);
+            animation-play-state: paused;
+        }
+        @keyframes spin{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg); 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="spin" id="spin1"></div>
+    <div class="spin" id="spin2"></div>
+    <div class="spin" id="spin3"></div>
+    <div class="spin" id="spin4"></div>
+    <div class="spin" id="spin5"></div>
+</body>
+</html>

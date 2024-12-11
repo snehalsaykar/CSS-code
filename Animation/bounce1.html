@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce</title>
+    <style>
+    ul{
+        width: 40%;
+        border: 1px solid;
+        margin: 400px auto;
+        display: flex;
+        border: none;
+        border-bottom: 1px solid;
+        justify-content: space-evenly;
+        /* transform: rotateZ(45deg); */
+    }
+    li{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+        list-style: none;
+        border: none;
+        background-image:linear-gradient(black, white, deeppink, blue, red, white, black);
+        animation-name: bounce;
+        animation-timing-function:linear;
+        animation-duration: 0.5s;
+        animation-iteration-count:infinite;
+        animation-direction: alternate-reverse;
+    }
+    .even{
+        animation-delay: 0.2s;
+    }
+    .odd{
+        animation-delay: 0.1s;
+    }
+
+    @keyframes bounce {
+        from{
+            transform: translateY(0);
+        }
+        to{
+            transform: translateY(-150px);
+        }
+        
+    }
+    
+</style>
+</head>
+<body>
+    <ul>
+        <li class="odd"></li>
+        <li class="even"></li>
+        <li class="odd"></li>
+        <li class="even"></li>
+        <li class="odd"></li>
+    </ul>
+</body>
+</html>

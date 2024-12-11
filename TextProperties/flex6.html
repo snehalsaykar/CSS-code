@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 500px;
+            width: 500px;
+            border: 1px solid;
+            margin: 50px auto;
+            display: flex;
+        }
+        .con1{
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .con2{
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+        }
+        .con3{
+            flex-direction: column;
+            flex-wrap: wrap-reverse;
+        }
+        .con4{
+            flex-direction: column-reverse;
+            flex-wrap: wrap-reverse;
+        }
+        .child{
+            height:100px;
+            width:100px;
+            border:1px solid;
+            /* box-sizing:border-box; */
+            text-align:center;
+            line-height:100px;
+            background-color: yellowgreen;
+        }
+        h1{
+            text-align: center;
+            color: crimson;
+        } 
+    </style>
+</head>
+<body>
+     <!-- column reverse and wrap reverse flexmodel  -->
+      <h1>1] flex-direction:row and flex-wrap:wrap</h1>
+    <div class="container con1">
+        <div class="child">Child1</div>
+        <div class="child">Child2</div>
+        <div class="child" >Child3</div>
+    </div>
+
+    <h1>2] flex-direction:row-rev and flex-wrap:wrap</h1>
+    <div class="container con2">
+        <div class="child" >Child1</div>
+        <div class="child">Child2</div>
+        <div class="child">Child3</div>
+    </div>
+
+    <div class="container con3">
+        <div class="child ">Child1</div>
+        <div class="child ">Child2</div>
+        <div class="child ">Child3</div>
+    </div>
+
+    <div class="container con4">
+        <div class="child">Child1</div>
+        <div class="child ">Child2</div>
+        <div class="child">Child3</div>
+    </div>
+</body>
+</html>

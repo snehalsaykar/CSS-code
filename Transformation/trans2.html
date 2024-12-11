@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformation for Skew</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+
+        }
+        .container{
+            height: 300px;
+            width: 250px;
+            border: 1px solid;
+            margin: 150px auto;
+            background-color: #333;
+            perspective: 400px;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhGpPFYCvYWshkLdAhxSnmMQToC3EZFOhlsw&s");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            /* transform-origin: top; */
+
+        }
+        .child{
+            height: 298px;
+            border: 1px solid;
+            width: 248px;
+            text-align: center;
+            line-height: 298px;
+            background-color: white;
+            transform: rotateX(45deg);
+            animation: mirror 2s infinite linear;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnnTibe3FqOintqHs3JWfoDY0gHCLuoyU0Hg&s");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transform-origin: center ;
+        }
+        @keyframes mirror {
+            from{
+                transform: skewY(0deg);
+            }
+            to{
+                transform: skewY(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child" id="child"></div>
+        <!-- <div class="child" id="child2">CHILD2</div>
+        <div class="child" id="child3">CHILD3</div> -->
+    </div>
+</body>
+</html>

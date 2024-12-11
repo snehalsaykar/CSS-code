@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex8</title>
+    <style>
+        .container{
+            height: 450px;
+            width: 500px;
+            border: 1px solid;
+            margin: 40px auto;
+            display: flex;
+            /* flex-direction: row; */
+            flex-wrap: wrap;
+        }
+        .con1{
+            align-items: flex-start;
+            /* justify-content: center; */
+        }
+        .con2{
+            align-items: center;
+        }
+        .con3{
+            align-items: end;
+        }
+        .con4{
+            align-items: start;
+            flex-direction: column;
+        }
+        .con5{
+            align-items: center;
+            flex-direction: column;
+        }
+        .con6{
+            align-items: end;
+            flex-direction: column;
+        }
+        .child{
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+            text-align: center;
+            line-height: 100px;
+            background-color: lightcyan;
+        }
+        h1{
+            text-align: center;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>1] flex-start</h1>
+    <div class="container con1">
+        <div class="child">Child1</div>
+        <div class="child">Child2</div>
+        <div class="child" >Child3</div>
+        <div class="child">Child4</div>
+        <div class="child">Child5</div>
+        <div class="child" >Child6</div>
+        <div class="child">Child7</div>
+        <div class="child" >Child8</div>
+        <div class="child">Child9</div>
+        <div class="child" >Child10</div>
+        <!-- <div class="child" >Child11</div>
+        <div class="child">Child12</div>
+        <div class="child" >Child13</div>
+        <div class="child">Child14</div>
+        <div class="child" >Child15</div> -->
+    </div>
+
+    <h1>2] center</h1>
+    <div class="container con2">
+        <div class="child">Child1</div>
+    </div>
+
+    <h1>3] end </h1>
+    <div class="container con3">
+        <div class="child">Child1</div>
+        <div class="child">Child2</div>
+        <div class="child" >Child3</div>
+        <div class="child">Child4</div>
+        <div class="child">Child5</div>
+        <div class="child" >Child6</div>
+        <div class="child">Child7</div>
+        <div class="child" >Child8</div>
+        <div class="child">Child9</div>
+        <div class="child" >Child10</div>
+        <!-- <div class="child" >Child11</div>
+        <div class="child">Child12</div>
+        <div class="child" >Child13</div>
+        <div class="child">Child14</div>
+        <div class="child" >Child15</div> -->
+    </div>
+    <h1>4]  align-items: start
+        flex-direction: column </h1>
+    <div class="container con4">
+        <div class="child">Child1</div>
+        <div class="child">Child2</div>
+        <div class="child" >Child3</div>
+        <div class="child">Child4</div>
+        <div class="child">Child5</div>
+        <div class="child" >Child6</div>
+        <div class="child">Child7</div>
+        <div class="child" >Child8</div>
+        <div class="child">Child9</div>
+        <div class="child" >Child10</div>
+        <!-- <div class="child" >Child11</div>
+        <div class="child">Child12</div>
+        <div class="child" >Child13</div>
+        <div class="child">Child14</div>
+        <div class="child" >Child15</div> -->
+    </div>
+
+    <h1>5] align-items: center
+        flex-direction: column </h1>
+    <div class="container con5">
+        <div class="child">Child1</div>
+        <div class="child">Child2</div>
+        <div class="child" >Child3</div>
+        <div class="child">Child4</div>
+        <div class="child">Child5</div>
+        <div class="child" >Child6</div>
+        <div class="child">Child7</div>
+        <div class="child" >Child8</div>
+        <div class="child">Child9</div>
+        <div class="child" >Child10</div>
+    </div>
+
+    <h1>6] align-items: end
+        flex-direction: column</h1>
+    <div class="container con6">
+        <div class="child">Child1</div>
+        <div class="child">Child2</div>
+        <div class="child" >Child3</div>
+        <div class="child">Child4</div>
+        <div class="child">Child5</div>
+        <div class="child" >Child6</div>
+        <div class="child">Child7</div>
+        <div class="child" >Child8</div>
+        <div class="child">Child9</div>
+        <div class="child" >Child10</div>
+    </div>
+</body>
+</html>

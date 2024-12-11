@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   .container{
+            height: 400px;
+            width: 600px;
+            border: 1px solid;
+            margin: 100px auto;
+            display: flex;
+        }
+    .child{
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+            text-align: center;
+            line-height: 100px;
+            background-color: yellowgreen;
+        }
+        #child2{
+            align-self: center;
+        }
+        #child1{
+            align-self: flex-start;
+        }
+        #child3{
+            align-self: flex-end;
+        }
+        .col2{
+            flex-direction: column;
+        }
+        #child4{
+            align-self: flex-start;
+        }
+        #child5{
+            align-self: center;
+        }
+        #child6{
+            align-self: flex-end;
+        }
+        h1{
+            color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>flex-direction: row</h1>
+    <div class="container col1">
+        <div class="child" id="child1">1</div>
+        <div class="child" id="child2">2</div>
+        <div class="child" id="child3">3</div>
+    </div>
+    
+    <h1>flex-direction: column</h1>
+    <div class="container col2">
+        <div class="child" id="child1">4</div>
+        <div class="child" id="child2">5</div>
+        <div class="child" id="child3">6</div>
+    </div>
+</body>
+</html>

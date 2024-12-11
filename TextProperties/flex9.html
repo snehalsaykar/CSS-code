@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .container{
+            height: 450px;
+            width: 500px;
+            border: 1px solid;
+            margin: 40px auto;
+            display: flex;
+            /* flex-direction: row; */
+            flex-wrap: wrap;
+        }
+        .con1{
+            align-content: start;
+            justify-content: start;
+        }
+        .con2{
+            align-content: center;
+            justify-content: center;
+        }
+        .con3{
+            align-content: space-around;
+            justify-content: space-around;
+        }
+        .con4{
+            align-content: space-evenly;
+            justify-content: space-evenly;
+        }
+        .con5{
+            align-content: space-between;
+            justify-content: space-between;
+        }
+        .con6{
+            align-content: end;
+            justify-content: end;
+        }
+        .child{
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+            text-align: center;
+            line-height: 100px;
+            background-color: greenyellow;
+        }
+        h1{
+            text-align: center;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>1] START</h1>
+   <div class="container con1">
+    <div class="child" id="child">CHILD1</div>
+    <div class="child" id="child">CHILD2</div>
+    <div class="child" id="child">CHILD3</div>
+    <div class="child" id="child">CHILD4</div>
+    <div class="child" id="child">CHILD5</div>
+    <div class="child" id="child">CHILD6</div>
+    <div class="child" id="child">CHILD7</div>
+    <div class="child" id="child">CHILD8</div>
+   </div>
+   <h1>2] CENTER</h1>
+   <div class="container con2">
+    <div class="child" id="child">CHILD1</div>
+    <div class="child" id="child">CHILD2</div>
+    <div class="child" id="child">CHILD3</div>
+    <div class="child" id="child">CHILD4</div>
+    <div class="child" id="child">CHILD5</div>
+    <div class="child" id="child">CHILD6</div>
+    <div class="child" id="child">CHILD7</div>
+    <div class="child" id="child">CHILD8</div>
+   </div>
+   <h1>3] SPACE-AROUND</h1>
+   <div class="container con3">
+    <div class="child" id="child">CHILD1</div>
+    <div class="child" id="child">CHILD2</div>
+    <div class="child" id="child">CHILD3</div>
+    <div class="child" id="child">CHILD4</div>
+    <div class="child" id="child">CHILD5</div>
+    <div class="child" id="child">CHILD6</div>
+    <div class="child" id="child">CHILD7</div>
+    <div class="child" id="child">CHILD8</div>
+   </div>
+   <h1>4] SPACE-EVENLLY</h1>
+   <div class="container con4">
+    <div class="child" id="child">CHILD1</div>
+    <div class="child" id="child">CHILD2</div>
+    <div class="child" id="child">CHILD3</div>
+    <div class="child" id="child">CHILD4</div>
+    <div class="child" id="child">CHILD5</div>
+    <div class="child" id="child">CHILD6</div>
+    <div class="child" id="child">CHILD7</div>
+    <div class="child" id="child">CHILD8</div>
+   </div>
+   <h1>5] SPACE-BETWEEN</h1>
+   <div class="container con5">
+    <div class="child" id="child">CHILD1</div>
+    <div class="child" id="child">CHILD2</div>
+    <div class="child" id="child">CHILD3</div>
+    <div class="child" id="child">CHILD4</div>
+    <div class="child" id="child">CHILD5</div>
+    <div class="child" id="child">CHILD6</div>
+    <div class="child" id="child">CHILD7</div>
+    <div class="child" id="child">CHILD8</div>
+   </div>
+   <h1>6] END</h1>
+   <div class="container  con6">
+    <div class="child" id="child">CHILD1</div>
+    <div class="child" id="child">CHILD2</div>
+    <div class="child" id="child">CHILD3</div>
+    <div class="child" id="child">CHILD4</div>
+    <div class="child" id="child">CHILD5</div>
+    <div class="child" id="child">CHILD6</div>
+    <div class="child" id="child">CHILD7</div>
+    <div class="child" id="child">CHILD8</div>
+   </div>
+</body>
+</html>

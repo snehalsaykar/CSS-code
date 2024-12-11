@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .exp{
+        height: 80px;
+        width: 150px;
+        background-color: red;
+        text-align: center;
+        color: aliceblue;
+        line-height: 80px;
+        margin: 20px 0px;
+
+        transition-property: width;
+        transition-duration: 1s;
+    }
+   
+    #exp1:hover{
+        width: 100%;
+        transition-timing-function: linear;
+    }
+    #exp2:hover{
+        width: 100%;
+        transition-timing-function: ease-in;
+    }
+    #exp3:hover{
+        width: 100%;
+        transition-timing-function: ease-out;
+    }
+    #exp4:hover{
+        width: 100%;
+        transition-timing-function: ease-in-out;
+    }
+    #exp5:hover{
+        width: 100%;
+        transition-timing-function: ease;
+    }
+    </style>
+</head>
+<body>
+    <div class="exp" id="exp1">LINEAR</div>
+    <div class="exp" id="exp2">EASE-IN</div>
+    <div class="exp" id="exp3">EASE-OUT</div>
+    <div class="exp" id="exp4">EASE-IN-OUT</div>
+    <div class="exp" id="exp5"></div>
+    <div class="exp" id="exp6"></div>
+</body>
+</html>

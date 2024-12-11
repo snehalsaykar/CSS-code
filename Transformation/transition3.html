@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .exp{
+        height: 80px;
+        width: 150px;
+        background-color: red;
+        margin: 20px 0px;
+        text-align: center;
+        color: white;
+        line-height: 80px;
+        animation: slider 3s infinite;
+    }
+
+    #exp1{
+        /* width: 100%; */
+        animation-timing-function: linear;
+    }
+    #exp2{
+        /* width: 100%; */
+        animation-timing-function: ease-in;
+    }
+    #exp3{
+        /* width: 100%; */
+        animation-timing-function: ease-out;
+    }
+    #exp4{
+        /* width: 100%; */
+        animation-timing-function: ease-in-out;
+    }
+    #exp5{
+        /* width: 100%; */
+        animation-timing-function: ease;
+    }
+    @keyframes slider{
+        from{
+            width: 150px;
+            transform: rotateX(0deg);
+            /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4MMTO79kJKOVQgQ9TRX3AT1lyuVZEzY8wTA&s");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat; */
+        }
+        to{
+            width: 100%;
+            /* height: 80vh; */
+            transform: rotateX(360deg);
+            /* background-image: url("https://images.herzindagi.info/image/2021/Dec/hit-film-tere-naam.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat; */
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="exp" id="exp1">LINEAR</div>
+    <div class="exp" id="exp2">EASE-IN</div>
+    <div class="exp" id="exp3">EASE-OUT</div>
+    <div class="exp" id="exp4">EASE-IN-OUT</div>
+    <div class="exp" id="exp5">EASE</div>
+    <!-- <div class="exp" id="exp6"></div> -->
+</body>
+</html>

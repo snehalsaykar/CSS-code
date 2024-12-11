@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        main{
+            width: 100%;
+            height: 100vh;
+            /* background-color: black; */
+            border: 1px solid;
+            /* background-image: linear-gradient(deeppink,skyblue); */
+
+        }
+        main menu{
+            width: 500px;
+            height: 550px;
+            background-color: black;
+            border: 1px solid transparent;
+            margin: 40px auto;
+            border-radius: 0px 50px 0px 50px;
+            box-shadow: 0px 0px 10px red;
+        }
+
+        .inputF:hover{
+            background-color: white;
+            box-shadow: 5px 5px 10px red;
+            color: black;
+        }
+
+        main menu h1{
+            margin-top: 40px;
+            color: red;
+            text-align: center;
+            font-size: 20px;
+        }
+        main menu input.inputF{
+            width: 350px;
+            margin: 40px 65px;
+            height: 50px;
+            text-align: center;
+            box-shadow: 0px 0px 10px red;
+            border-radius: 30px;
+            border: transparent;
+            color: white;
+            background-color: black;
+        }
+        .inputF::placeholder{
+            color: red;
+            
+        }
+        #input1{
+            margin-top: 40px;
+        }
+        main menu input.btn{
+            width: 120px;
+            height: 50px;
+            border-radius: 30px;
+            margin-top: 25px;
+            color: red;
+            background-color: black;
+        }
+        .btn1{
+            margin-left: 70px;
+            box-shadow: 0px 0px 10px red;
+
+            
+        }
+        .btn2{
+            margin-left: 100px;
+            box-shadow: 0px 0px 10px;
+            
+        }
+        .btn:hover{
+            background-color: white;
+            box-shadow: 5px 5px 10px red;
+            color: black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <menu>
+            <h1>REGISTRATION FROM</h1>
+            <form action="">
+                <input type="text" class="inputF input1" placeholder="NAME">
+                <input type="email" class="inputF" placeholder="EMAIL">
+                <input type="submit" class="btn btn1" value="SUBMIT">
+                <input type="reset" class="btn btn2" value="RESET">
+            </form>
+        </menu>
+    </main>
+</body>
+</html>
